@@ -10,7 +10,7 @@
 
 #include <Smartcar.h>
 
-Odometer encoderLeft(390), encoderRight(390); //Βάλτε τους δικούς σας παλμούς ανά μέτρο
+Odometer encoderLeft(180), encoderRight(180); //Βάλτε τους δικούς σας παλμούς ανά μέτρο
 Gyroscope gyro(13); //Βάλτε την κατάλληλη τιμή σύμφωνα με το γυροσκόπιό σας
 Car folkracer;
 boolean state1Done = false;
