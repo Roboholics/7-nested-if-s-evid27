@@ -32,6 +32,7 @@ void loop() {
   folkracer.updateMotors();
   unsigned long distance = encoderLeft.getDistance();//Αποθηκεύουμε στην μεταβλητή distance την τιμή που έχουμε πάρει από το αριστερό encoder
   distance = distance + encoderRight.getDistance();//Στην ίδια μεταβλητή distance αποθηκεύουμε την τιμή της συν την τιμή που μας δίνει το δεξί encoder
+  distance = distance / 2;
   if (distance > 20) {//Αν η τιμή distance είναι μεγαλύτερη από 20,
     if (distance < 30) {//Μικρότερη από 30,
       if (state1Done == false) {//Και η πρώτη κατάσταση του αυτοκινήτου δεν έχει ολοκληρωθεί,
